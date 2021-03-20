@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+
+</html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FORM</title>
+    <link rel="stylesheet" href="style/style.css"></head>
+
+<body>
+    <h1>HTML5 Form Tags and Attribute</h1>
+
+    <!-- set background color -->
+    <form class="form-style">
+        <fieldset>
+            <legend>background color set input</legend>
+            <input type="color" name="usercolor" id="inpcolor"><br>
+            <input type="button" id="colorbtn" value="set color" onclick="changecolor()"><br>
+            <p class="form-style" id="colorful">set background color to text</p>
+
+        </fieldset>
+    </form>
+
+
+
+
+
+
+    <!-- change date on click -->
+
+    <form class="form-style">
+        <fieldset>
+            <legend>change date on click</legend>
+            <input type="date" id="inpDate">
+            <br>
+            <input type="button" id="datebtn" value="set date" onclick="chagedate()">
+        </fieldset>
+        <p class="form-style" id="demo">change date</p>
+    </form>
+
+
+
+
+
+
+    <!-- show email on click -->
+
+    <form>
+        <fieldset>
+            <legend>show email on click</legend>
+            <input type="email" id="inpEmail">
+            <br>
+            <input type="button" id="emailbtn" value="show email" onclick="showEmail()">
+            <p id="demo2">show email</p>
+        </fieldset>
+    </form>
+
+
+
+
+
+
+
+    <!-- show month on click -->
+
+    <form>
+        <fieldset>
+            <legend>show month on click</legend>
+            <input type="month" id="inpMonth">
+            <br>
+            <input type="button" value="Show Month" onclick="showmonth()">
+            <p id="demo3">show month</p>
+        </fieldset>
+    </form>
+
+
+
+
+
+
+    <!-- search input -->
+
+    <form>
+        <fieldset>
+            <legend>search input</legend>
+            <input type="search" id="inpsearch">
+            <br>
+            <input type="submit" value="search">
+        </fieldset>
+    </form>
+
+
+
+
+
+
+    <!--range input  -->
+
+    <form>
+        <fieldset>
+            <legend>range input</legend>
+            <input type="range" max="1000" min="2" step="10" value="2" id="rng">
+            <br>
+            <input type="button" value="Show Number" onclick="showN()">
+            <p id="demo4">show range</p>
+        </fieldset>
+    </form>
+
+
+
+
+
+    <!-- show time on click -->
+
+    <form>
+        <fieldset>
+            <legend>show time on click</legend>
+            <input type="time" id="inpTime">
+            <br>
+            <input type="button" value="Set Time" onclick="showTime()">
+            <p id="demo5">time showing</p>
+        </fieldset>
+    </form>
+
+
+
+
+
+    <!-- url show -->
+
+    <form>
+        <fieldset>
+            <legend>url input</legend>
+            <input type="url" id="inpURL">
+            <br>
+            <input type="button" value="Set URL" onclick="showURL()">
+            <p id="demo6">url showing</p>
+        </fieldset>
+    </form>
+
+
+
+
+
+    <!-- autocomplete attribute -->
+
+    <form>
+        <fieldset>
+            <legend>autocomplete attribute</legend>
+            <input type="text" name="familyname" autocomplete="on"><br>
+            <input type="email" name="email" autocomplete="on"><br>
+            <input type="search" name="email" autocomplete="on"><br>
+            <input type="url" name="email" autocomplete="on"><br>
+            <input type="password" name="email" autocomplete="on"><br>
+            <input type="date" name="email" autocomplete="on"><br>
+            <input type="rang" name="email" autocomplete="on"><br>
+            <input type="color" name="email" autocomplete="on"><br>
+            <input type="submit" value="Send Data">
+        </fieldset>
+    </form>
+
+
+
+
+
+
+    <!-- autofocus attribute -->
+
+
+    <form>
+        <fieldset>
+            <legend>autofocus attribute</legend>
+            <input type="text" name="familyname" autocomplete="on"><br>
+            <input type="email" name="email" autocomplete="on"><br>
+            <input type="search" name="email" autocomplete="on"><br>
+            <input type="url" name="email" autocomplete="on" autofocus><br>
+            <input type="password" name="email" autocomplete="on"><br>
+            <input type="date" name="email" autocomplete="on"><br>
+            <input type="rang" name="email" autocomplete="on"><br>
+            <input type="color" name="email" autocomplete="on"><br>
+            <input type="submit" value="Send Data">
+        </fieldset>
+    </form>
+
+
+
+
+
+    <!-- form attribute -->
+
+
+    <form id="frdrs_form">
+        <fieldset>
+            <legend>form attribute</legend>
+            <input type="text" name="Site"><br>
+            <input type="submit" value="Send Data">
+        </fieldset>
+    </form>
+    <input class="input-out" type="email" name="email" form="frdrs_form">
+
+
+
+
+
+
+    <!-- formaction attribute -->
+
+    <form id="frdrs_form">
+        <fieldset>
+            <legend>formaction attribute</legend>
+            <input type="text" name="Site"><br>
+            <input type="email" name="email"><br>
+            <input type="submit" value="Send Data" formaction="show.php">
+        </fieldset>
+    </form>
+
+
+
+
+
+
+    <!-- formenctype attribute -->
+
+    <form id="frdrs_form" method="post">
+        <fieldset>
+            <legend>formenctype attribute</legend>
+            <input type="text" name="Site"><br>
+            <input type="email" name="email"><br>
+            <input type="submit" value="Send Data" formenctype="application/x-www-form-urlencoded">
+            <input type="submit" value="Send Data" formenctype="multipart/form-data">
+            <input type="submit" value="Send Data" formenctype="text/plain">
+        </fieldset>
+    </form>
+
+    <form id="frdrs_form" method="get">
+        <fieldset>
+            <legend>formenctype attribute</legend>
+            <input type="text" name="Site"><br>
+            <input type="email" name="email"><br>
+            <input type="submit" value="Send Data" formaction="show.php" formmethod="post">
+        </fieldset>
+    </form>
+    <form id="frdrs_form" method="post">
+        <fieldset>
+            <legend>formenctype attribute</legend>
+            <input type="text" name="Site"><br>
+            <input type="email" name="email"><br>
+            <input type="submit" value="Send Data" formaction="show.php">
+        </fieldset>
+    </form>
+
+
+
+
+
+
+    <!-- form novalidation -->
+    <form id="frdrs_form" method="get">
+        <fieldset>
+            <legend>form novalidation</legend>
+            <input type="text" name="Site"><br>
+            <input type="email" name="email"><br>
+            <input type="submit" value="Send Data" formnovalidate>
+        </fieldset>
+    </form>
+
+
+
+
+
+
+    <!-- form novalidation & list attribute -->
+
+    <form id="frdrs_form" method="get">
+        <fieldset>
+            <legend>form novalidation & list attribute</legend>
+            <input list="web"><br>
+            <datalist id="web">
+                <option value="HTML5">
+                <option value="CSS3">
+                <option value="JavaScript">
+                <option value="jQuery">
+            </datalist>
+            <input type="submit" value="Send Data" formnovalidate>
+        </fieldset>
+    </form>
+
+
+
+
+
+    <!-- multiple file can added -->
+
+    <form id="frdrs_form" method="get">
+        <fieldset>
+            <legend>multiple file can added</legend>
+            <input type="file" name="file_select" multiple><br>
+            <input type="submit" value="Send Data">
+        </fieldset>
+    </form>
+
+
+
+
+
+
+    <!-- min & max -->
+
+    <form id="frdrs_form" method="get">
+        <fieldset>
+            <legend>min & max </legend>
+            Number:<input type="number" name="number" min="2" max="20"><br>
+            Date:<input type="date" name="date" min="1396/04/20" max="1397/04/20"><br>
+            Time:<input type="time" name="time" min="08:00:00" max="12:00:00"><br>
+            Rang:<input type="rang" name="rang" min="2" max="20"><br>
+            Month:<input type="month" name="month"><br>
+            <input type="submit" value="Send Data">
+        </fieldset>
+    </form>
+
+
+
+
+
+
+    <!-- placeholder -->
+
+    <form id="frdrs_form" method="get">
+        <fieldset>
+            <legend>placeholder</legend>
+            <input type="text" name="Site" placeholder="نام خود را واردکنید"><br>
+            <input type="search" name="search" placeholder="Enter Text + Enter"><br>
+            <input type="url" name="url" placeholder="Insert URL"><br>
+            <input type="email" name="email" placeholder="Insert Email Address"><br>
+            <input type="password" name="password" placeholder="Insert Your PassWord"><br>
+            <input type="submit" value="Send Data" formnovalidate>
+        </fieldset>
+    </form>
+
+
+
+
+
+
+    <!-- pattern -->
+
+    <form id="frdrs_form" method="get">
+        <fieldset>
+            <legend>pattern</legend>
+            <input type="text" name="Site" pattern="[a-z0-9]{5}"><br>
+            <input type="email" name="email"><br>
+            <input type="submit" value="Send Data">
+        </fieldset>
+    </form>
+
+
+
+
+
+    <!-- required input -->
+
+    <form id="frdrs_form" method="get">
+        <fieldset>
+            <legend>required input</legend>
+            <input type="text" name="Site" required><br>
+            <input type="email" name="email"><br>
+            <input type="submit" value="Send Data">
+        </fieldset>
+    </form>
+
+
+
+
+
+    <!-- datalist tag -->
+
+    <form id="frdrs_form" method="get">
+        <fieldset>
+            <legend>datalist tag </legend>
+            <input list="Project"><br>
+            <datalist id="Project">
+                <option value="FaraDars">
+                <option value="Matlabsite">
+                <option value="CodeSara">
+            </datalist>
+            <input type="submit" value="Send Data">
+        </fieldset>
+    </form>
+
+
+
+
+
+    <!-- keygen tag -->
+
+    <form id="frdrs_form" method="get">
+        <fieldset>
+            <legend>keygen tag</legend>
+            <input type="text" name="user_name"><br>
+            <keygen name="security">
+            <input type="submit" value="Send Data">
+        </fieldset>
+    </form>
+
+
+
+
+    <!-- output tag -->
+
+    <form id="frdrs_form" method="get" oninput="result.value=parseInt(number1.value)+parseInt(number2.value)">
+        <fieldset>
+            <legend>output tag</legend>
+            <input type="number" id="number1"> + <input type="number" id="number2"> = <output name="result"
+                for="number1 number2"></output>
+            <input type="submit" value="Send Data">
+        </fieldset>
+    </form>
+
+
+
+    <!-- reset type -->
+
+    <form>
+        <fieldset>
+            <legend>reset type input</legend>
+            <input type="reset" value="reset">
+        </fieldset>
+    </form>
+
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

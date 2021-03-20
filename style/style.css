@@ -1,0 +1,38 @@
+body {
+  background-color: #E8F8F5;
+}
+
+form {
+  margin-top: 50px;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+legend {
+  color: #DE3163;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+input {
+  padding: 5px;
+  margin: 5px;
+  color: #002975;
+  font-weight: bold;
+}
+
+fieldset {
+  border-color: #6495ED;
+  border-style: solid;
+}
+
+h1 {
+  text-align: center;
+  background: -webkit-linear-gradient(#ff0000, #3f3e3e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/*# sourceMappingURL=style.css.map */
